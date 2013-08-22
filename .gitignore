@@ -1,0 +1,5 @@
+*.javac
+*.class
+*.jar
+*.war
+*.ear
