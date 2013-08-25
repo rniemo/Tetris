@@ -12,7 +12,11 @@
  public class NPanel extends JPanel{
  
     private GameLoop loop;
- 
+    
+    /**
+     * The main constructor.
+     */
+     
     public NPanel(GameLoop l){
         loop = l;
         setFocusable(true);
@@ -26,6 +30,10 @@
         });
     }
  
+    /**
+     *  Paints the NPanel using a Graphics object.
+     *  @param g the Graphics context being painted on.
+     */
     public void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
         super.paintComponent(g2d);
