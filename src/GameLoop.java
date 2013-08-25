@@ -13,6 +13,8 @@ public class GameLoop {
     private NPanel panel;
     private JFrame frame;
     private Timer timer;
+    public final static int FRAME_WIDTH = 350;
+    public final static int FRAME_HEIGHT = 550;
 
     /**
      * The main constructor.
@@ -22,6 +24,7 @@ public class GameLoop {
         frame = new JFrame("Tetris");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(panel);
+        frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
         timer = new Timer(1000 / 60, new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 updateLoop();
