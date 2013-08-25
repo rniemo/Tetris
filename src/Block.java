@@ -3,7 +3,6 @@ import java.awt.Graphics2D;
 /**
  *  A class for creating and managing the different Tetris blocks.
  */
-
 public class Block{
 
     public final static int SIZE = 20;

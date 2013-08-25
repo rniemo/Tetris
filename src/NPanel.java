@@ -1,6 +1,3 @@
-/**
- * Contains the panel for drawing to the screen
- */
  
  import javax.swing.JPanel;
  import java.awt.event.KeyEvent;
@@ -8,7 +5,9 @@
  import java.awt.Graphics2D;
  import java.awt.Graphics;
  
- 
+ /**
+ * Contains the panel for drawing to the screen
+ */
  public class NPanel extends JPanel{
  
     private GameLoop loop;
@@ -17,7 +16,6 @@
      * The main constructor.
      * @param gl Reference to the original GameLoop.
      */
-     
     public NPanel(GameLoop gl){
         loop = gl;
         setFocusable(true);
